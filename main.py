@@ -1,7 +1,6 @@
 # Xzavyer A. // xzavyer.dev
 # https://github.com/xzavyeradams/openai-discord
 
-import openai
 import discord
 import json
 import sys
