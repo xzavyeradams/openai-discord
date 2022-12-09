@@ -1,3 +1,4 @@
+⚠️ **This project is incomplete, I'm still working on it.**
 # openai-discord
 A discord bot which presents an interface to interact with OpenAI products.
 
