@@ -5,6 +5,7 @@ import discord
 import json
 import sys
 from discord.ext import commands
+from cogs import gpt3
 
 # attempts to load the config file
 try:
@@ -21,6 +22,7 @@ async def on_ready():
     print("Bot is online & logged in")
     await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="xzavyer.dev/github"))
     # load cogs here
+    gpt3.setup(client, config["authorization"], config["hardLimit"], config["organization"])
 
 print("\n\ngithub.com/xzavyeradams/openai-discord")
 client.run(config["token"])
